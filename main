@@ -1,0 +1,22 @@
+package ejemplo01;
+/*El nombre del package puede variar a gusto.*/
+
+import javax.swing.JOptionPane;
+public class Main {
+    public static void main(String[] args) {
+        String nombre;
+        char genero;
+        double salario;
+        float antiguedadLaboral;
+        nombre="María Ramírez";
+        genero='f';
+        salario=1500.00;
+        antiguedadLaboral=2.5f;
+        JOptionPane.showMessageDialog(null,"¡Bienvenidos a Introducción a la Programación!\n\n"
+                + "¡Disfruten mucho el curso!",
+        "Mensaje de bienvenida",JOptionPane.INFORMATION_MESSAGE);
+        JOptionPane.showMessageDialog(null,"El género de "+nombre+" es "+genero+".\n\n"
+                +nombre+" tiene "+antiguedadLaboral+" años de laborar. Y recibe un salario de $"
+        +salario);
+    }    
+}
